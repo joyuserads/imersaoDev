@@ -1,0 +1,194 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #898;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+    color: azure;
+    padding: 0 10px;
+}
+
+button {
+    background-color: #006341;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d331c5;
+}
+
+/* CONTAINER DA IMAGEM PRINCIPAL */
+.main-images {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 100%;
+    position: relative;
+}
+
+/* IMAGEM PRINCIPAL COM EFEITO REDONDO */
+img.main-cup {
+    width: 250px;
+    max-width: 80%;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* MINIATURAS */
+.thumbs {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.thumbs .thumb {
+    width: 70px;
+    max-width: 25%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbs .thumb:hover {
+    transform: scale(1.1);
+}
+
+/* DIV REDONDA OPCIONAL */
+.circulo {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #a8e6cf, #56c596);
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+/* Seu CSS existente */
+
+/* Cores de tema */
+.theme-green {
+    background-color: #017143; /* Verde do Starbucks */
+    color: #fff;
+}
+.theme-green button {
+    background-color: #004d2e; /* Um verde mais escuro para o botão */
+    color: #fff;
+    border: 1px solid #004d2e;
+}
+
+.theme-pink button {
+    background-color: #d15c7e; /* Um rosa mais escuro para o botão */
+    color: #fff;
+    border: 1px solid #d15c7e;
+}
+.theme-pink {
+    background-color: #eb7495; /* Um rosa de exemplo */
+    color: #fff;
+}
+
+
+.theme-purple button {
+    background-color: #723e85; /* Um roxo mais escuro para o botão */
+    color: #fff;
+    border: 1px solid #723e85;
+}
+.theme-purple {
+    background-color: #8c52a0; /* Um roxo de exemplo */
+    color: #fff;
+}
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    img.main-cup {
+        width: 200px;
+    }
+
+    .main-images {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .thumbs .thumb {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    img.main-cup {
+        width: 160px;
+    }
+
+    .thumbs {
+        gap: 10px;
+    }
+}
+
+.thumbs {
+    margin-top: 15px;
+}
+
+.thumbs .thumb {
+    width: 70px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbs .thumb:hover {
+    transform: scale(1.1);
+}
+
+
